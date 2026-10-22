@@ -3,114 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ТАЦ Гранд — Сметки</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Сметки ТАЦ Гранд</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23a5452b'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='19' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/app.css">
+<!--GRAND:STYLE-->
 </head>
 <body>
-
-<header class="hero">
-  <div class="hero__inner wrap">
-    <div class="brand">
-      <span class="brand__mark">GRAND</span>
-      <span class="brand__sub">Търговски административен център · Пловдив, ул. „Капитан Райчо“ 56</span>
-    </div>
-    <h1>Месечни сметки за общите части</h1>
-    <p class="hero__lead">Разпределение по Методиката, приета от Общото събрание на 06.10.2026 г.</p>
-  </div>
-</header>
-
-<main class="wrap layout">
-  <aside class="panel" aria-labelledby="inp-title">
-    <h2 id="inp-title">Разходи за месеца</h2>
-    <form id="form" autocomplete="off">
-      <label class="field">
-        <span>Отчетен месец</span>
-        <input id="month" type="month" value="2027-01">
-      </label>
-
-      <fieldset>
-        <legend>Разходи, €</legend>
-        <label class="field"><span>Постоянни текущи разходи <em>чл. 5 · поравно</em></span>
-          <input id="fixed" type="number" step="0.01" min="0" value="25000"></label>
-        <label class="field"><span>Вода за общите части <em>чл. 6 · поравно</em></span>
-          <input id="water" type="number" step="0.01" min="0" value="800"></label>
-        <label class="field"><span>Ток за общите части <em>чл. 7 · по ид. части</em></span>
-          <input id="power" type="number" step="0.01" min="0" value="6000"></label>
-        <label class="field"><span>Ток за чилърите <em>чл. 8 · по ид. части, ет. 1–3</em></span>
-          <input id="chillers" type="number" step="0.01" min="0" value="9000"></label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Приходи от общите части, €</legend>
-        <label class="field"><span>Реклама, LED екран, автомати и др. <em>чл. 10</em></span>
-          <input id="revenue" type="number" step="0.01" min="0" value="3000"></label>
-        <label class="field"><span>Приспада се от разходите</span>
-          <span class="range">
-            <input id="deductPct" type="range" min="0" max="100" step="5" value="100">
-            <output id="deductOut">100%</output>
-          </span>
-        </label>
-      </fieldset>
-    </form>
-    <p class="hint">Числата са примерни. Сметките се преизчисляват веднага.</p>
-  </aside>
-
-  <section class="results" aria-labelledby="res-title">
-    <div class="results__head">
-      <h2 id="res-title">Справка за <span id="monthLabel">януари 2027</span></h2>
-      <span id="status" class="pill"></span>
-    </div>
-
-    <div class="pools" id="pools"></div>
-
-    <div class="tablebar">
-      <label class="search">
-        <span class="sr">Търсене на обект</span>
-        <input id="q" type="search" placeholder="Търси обект, напр. 2-15">
-      </label>
-      <div class="chips" role="group" aria-label="Филтър по етаж" id="chips">
-        <button type="button" class="chip is-on" data-f="all">Всички</button>
-        <button type="button" class="chip" data-f="1">1 ет.</button>
-        <button type="button" class="chip" data-f="2">2 ет.</button>
-        <button type="button" class="chip" data-f="3">3 ет.</button>
-        <button type="button" class="chip" data-f="4">4 ет.</button>
-        <button type="button" class="chip" data-f="other">Други</button>
-      </div>
-    </div>
-
-    <div class="tablewrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Обект</th><th class="num">Ид. част %</th>
-            <th class="num">Постоянни</th><th class="num">Вода</th>
-            <th class="num">Ток общи</th><th class="num">Чилъри</th>
-            <th class="num">Общо, €</th>
-          </tr>
-        </thead>
-        <tbody id="rows"></tbody>
-        <tfoot id="foot"></tfoot>
-      </table>
-    </div>
-    <p class="hint">Натисни ред, за да видиш бележката на обекта.</p>
-  </section>
-</main>
-
-<div class="sheet" id="sheet" hidden>
-  <div class="sheet__card" role="dialog" aria-modal="true" aria-labelledby="slipTitle">
-    <button type="button" class="sheet__close" id="close" aria-label="Затвори">×</button>
-    <div class="slip" id="slip"></div>
+<div id="app" aria-live="polite">
+  <div class="boot">
+    <span class="brand-mark">GRAND</span>
+    <span>Зареждане…</span>
   </div>
 </div>
-
-<footer class="wrap foot">
-  Прототип · данните не се записват · v0.1
-</footer>
-
-<script src="/calc.js"></script>
-<script src="/app.js"></script>
+<div id="toast" class="toast" role="status" hidden></div>
+<!--GRAND:SCRIPTS-->
+<script src="/js/format.js"></script>
+<script src="/js/calc.js"></script>
+<script src="/js/libs.js"></script>
+<script src="/js/store-server.js"></script>
+<script src="/js/pdf.js"></script>
+<script src="/js/excel.js"></script>
+<script src="/js/app.js"></script>
+<!--/GRAND:SCRIPTS-->
 </body>
 </html>

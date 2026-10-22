@@ -1,0 +1,2579 @@
+[
+ {
+  "id": "ГАРАЖ",
+  "share": 19.588,
+  "kind": "garage",
+  "floor": -1,
+  "fixed": true,
+  "water": false,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Дискотека-КА1",
+  "share": 1.303,
+  "kind": "unit",
+  "floor": null,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false,
+  "note": "Етажът не е известен"
+ },
+ {
+  "id": "ЛЕКСИ",
+  "share": 19.628,
+  "kind": "hypermarket",
+  "floor": null,
+  "fixed": true,
+  "water": false,
+  "power": true,
+  "chillers": false,
+  "note": "Допускане: хипермаркет"
+ },
+ {
+  "id": "Кафе -2.25",
+  "share": 0.498,
+  "kind": "unit",
+  "floor": null,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false,
+  "note": "Етажът не е известен"
+ },
+ {
+  "id": "1-67",
+  "share": 0.637,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-68",
+  "share": 0.239,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-69 Виваком",
+  "share": 0.406,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "ПИБ",
+  "share": 1.827,
+  "kind": "unit",
+  "floor": null,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true,
+  "note": "Етажът не е известен"
+ },
+ {
+  "id": "ФРЕШ БАР",
+  "share": 0.28,
+  "kind": "unit",
+  "floor": null,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true,
+  "note": "Етажът не е известен"
+ },
+ {
+  "id": "1-1",
+  "share": 0.081,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-2",
+  "share": 0.09,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-3",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-4",
+  "share": 0.167,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-5",
+  "share": 0.167,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-6",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-7",
+  "share": 0.089,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-8",
+  "share": 0.089,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-9",
+  "share": 0.089,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-10",
+  "share": 0.082,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-11",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-12",
+  "share": 0.092,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-13",
+  "share": 0.08,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-14",
+  "share": 0.107,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-15",
+  "share": 0.113,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-16",
+  "share": 0.158,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-17",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-18",
+  "share": 0.205,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-19",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-20",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-21",
+  "share": 0.104,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-22",
+  "share": 0.135,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-23",
+  "share": 0.16,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-24",
+  "share": 0.169,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-25",
+  "share": 0.163,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-26",
+  "share": 0.167,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-27",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-28",
+  "share": 0.126,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-29",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-30",
+  "share": 0.176,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-31",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-32",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-33",
+  "share": 0.113,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-34",
+  "share": 0.113,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-35",
+  "share": 0.151,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-36",
+  "share": 0.146,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-37",
+  "share": 0.145,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-38",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-39",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-40",
+  "share": 0.151,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-41",
+  "share": 0.293,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-42",
+  "share": 0.146,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-43",
+  "share": 0.143,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-44",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-45",
+  "share": 0.159,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-46",
+  "share": 0.149,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-47",
+  "share": 0.161,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-48",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-49",
+  "share": 0.15,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-50",
+  "share": 0.251,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-51",
+  "share": 0.212,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-52",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-53",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-54",
+  "share": 0.1,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-55",
+  "share": 0.14,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-56",
+  "share": 0.148,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-57",
+  "share": 0.263,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-58",
+  "share": 0.109,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-59",
+  "share": 0.13,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-60",
+  "share": 0.131,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-61",
+  "share": 0.16,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-62",
+  "share": 0.172,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-63",
+  "share": 0.172,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-64",
+  "share": 0.122,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-65",
+  "share": 0.125,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-66",
+  "share": 0.323,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "1-70",
+  "share": 0.0,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true,
+  "note": "0% идеални части"
+ },
+ {
+  "id": "1-71",
+  "share": 0.0,
+  "kind": "unit",
+  "floor": 1,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true,
+  "note": "0% идеални части"
+ },
+ {
+  "id": "2-1",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-2",
+  "share": 0.165,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-3",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-4",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-5",
+  "share": 0.165,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-6",
+  "share": 0.18,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-7",
+  "share": 0.178,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-8",
+  "share": 0.163,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-9",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-10",
+  "share": 0.217,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-11",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-12",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-13",
+  "share": 0.217,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-14",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-15",
+  "share": 0.169,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-16",
+  "share": 0.246,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-17",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-18",
+  "share": 0.177,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-19",
+  "share": 0.267,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-20",
+  "share": 0.231,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-21",
+  "share": 0.236,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-22",
+  "share": 0.175,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-23-1",
+  "share": 0.0885,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-23-2",
+  "share": 0.0885,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-24",
+  "share": 0.13,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-25",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-26",
+  "share": 0.18,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-27",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-28",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-29",
+  "share": 0.227,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-30",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-31",
+  "share": 0.15,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-32",
+  "share": 0.149,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-33",
+  "share": 0.156,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-34",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-35",
+  "share": 0.254,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-36",
+  "share": 0.297,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-37",
+  "share": 0.15,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-38",
+  "share": 0.147,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-39",
+  "share": 0.156,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-40",
+  "share": 0.163,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-41",
+  "share": 0.153,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-42",
+  "share": 0.211,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-43",
+  "share": 0.184,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-44",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-45",
+  "share": 0.154,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-46",
+  "share": 0.263,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-47",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-48",
+  "share": 0.201,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-49",
+  "share": 0.156,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-50",
+  "share": 0.112,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-51",
+  "share": 0.153,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-52",
+  "share": 0.156,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-53",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-54",
+  "share": 0.176,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-55",
+  "share": 0.48,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-56",
+  "share": 0.128,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-57",
+  "share": 0.128,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-58",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-59",
+  "share": 0.16,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-60",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-61",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-62",
+  "share": 0.775,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-63",
+  "share": 0.216,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-64-1",
+  "share": 0.107,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-64-2",
+  "share": 0.114,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-65",
+  "share": 0.212,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-66",
+  "share": 0.194,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "2-67",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 2,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-1",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-2",
+  "share": 0.165,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-3",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-4",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-5",
+  "share": 0.165,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-6",
+  "share": 0.18,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-7",
+  "share": 0.178,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-8",
+  "share": 0.163,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-9",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-10",
+  "share": 0.217,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-11",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-12",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-13",
+  "share": 0.217,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-14",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-15",
+  "share": 0.169,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-16",
+  "share": 0.246,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-17",
+  "share": 0.164,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-18",
+  "share": 0.177,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-19",
+  "share": 0.206,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-20",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-21-1",
+  "share": 0.085,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-21-2",
+  "share": 0.085,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-22",
+  "share": 0.13,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-23",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-24",
+  "share": 0.18,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-25",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-26",
+  "share": 0.174,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-27",
+  "share": 0.227,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-28-1",
+  "share": 0.079,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-28-2",
+  "share": 0.076,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-29",
+  "share": 0.15,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-30",
+  "share": 0.149,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-31",
+  "share": 0.157,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-32",
+  "share": 0.131,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-33",
+  "share": 0.299,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-34",
+  "share": 0.298,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-35",
+  "share": 0.151,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-36",
+  "share": 0.147,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-37",
+  "share": 0.157,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-38",
+  "share": 0.202,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-39",
+  "share": 0.153,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-40",
+  "share": 0.166,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-41",
+  "share": 0.184,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-42",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-43",
+  "share": 0.154,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-44",
+  "share": 0.263,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-45",
+  "share": 0.171,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-46",
+  "share": 0.202,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-47",
+  "share": 0.157,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-48",
+  "share": 0.112,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-49",
+  "share": 0.153,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-50",
+  "share": 0.157,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-51-1",
+  "share": 0.103,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-51-2",
+  "share": 0.109,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-52",
+  "share": 0.176,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-53",
+  "share": 0.239,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-54",
+  "share": 0.128,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-55",
+  "share": 0.128,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-56",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-57",
+  "share": 0.16,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-58",
+  "share": 0.109,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-59",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-60",
+  "share": 0.24,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-61",
+  "share": 0.633,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-62",
+  "share": 0.185,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-63",
+  "share": 0.169,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-65",
+  "share": 0.214,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-66",
+  "share": 0.52,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-67-1",
+  "share": 0.177,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-67-2",
+  "share": 0.178,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-68",
+  "share": 0.309,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "3-69",
+  "share": 0.296,
+  "kind": "unit",
+  "floor": 3,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": true
+ },
+ {
+  "id": "4-1",
+  "share": 0.624,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-2",
+  "share": 0.663,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-5",
+  "share": 0.247,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-6",
+  "share": 0.249,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-7",
+  "share": 0.252,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-8-2 ГЕОМАРК",
+  "share": 0.13,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-8-1 МИКС",
+  "share": 0.795,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-9",
+  "share": 0.527,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-10",
+  "share": 0.649,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-11",
+  "share": 0.531,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-12-1",
+  "share": 0.256,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-12-2",
+  "share": 0.247,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-12-3",
+  "share": 0.279,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-14",
+  "share": 0.177,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-15",
+  "share": 0.168,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-16-1",
+  "share": 0.112,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-16-2",
+  "share": 0.11,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-17",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-18",
+  "share": 0.17,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-19",
+  "share": 0.219,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-20",
+  "share": 0.244,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-20",
+  "share": 0.357,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-21",
+  "share": 0.26,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-21",
+  "share": 0.256,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-22",
+  "share": 0.155,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-22",
+  "share": 0.181,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-23-1",
+  "share": 0.152,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-23-2",
+  "share": 0.205,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-23",
+  "share": 0.419,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-24",
+  "share": 0.25,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-24",
+  "share": 0.311,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-25",
+  "share": 0.25,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-25",
+  "share": 0.305,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-26",
+  "share": 0.245,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "4-27",
+  "share": 0.516,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-27",
+  "share": 0.334,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "4-28",
+  "share": 0.148,
+  "kind": "unit",
+  "floor": 4,
+  "fixed": true,
+  "water": true,
+  "power": true,
+  "chillers": false
+ },
+ {
+  "id": "Тераса към 4-28",
+  "share": 0.047,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ },
+ {
+  "id": "Обща тераса",
+  "share": 8.261,
+  "kind": "terrace",
+  "floor": 4,
+  "fixed": false,
+  "water": false,
+  "power": false,
+  "chillers": false
+ }
+]

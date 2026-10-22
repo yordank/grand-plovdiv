@@ -1,0 +1,17 @@
+{
+  "name": "grand-plovdiv",
+  "version": "0.1.0",
+  "description": "Месечни сметки за общите части на ТАЦ „Гранд“, Пловдив",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/calc.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

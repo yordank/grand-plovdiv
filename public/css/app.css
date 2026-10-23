@@ -302,3 +302,5 @@ input:disabled, select:disabled, textarea:disabled { opacity: .8; background: tr
 @media (prefers-reduced-motion: reduce) {
   .btn.is-busy::after { animation: none; }
 }
+
+.demo-note { margin-top: 14px; padding: 9px 14px; border-radius: 10px; font-size: 13px; background: color-mix(in srgb, var(--warn) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--warn) 35%, transparent); }

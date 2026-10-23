@@ -131,6 +131,7 @@
             ${nav.map(([k, l]) => `<a href="#${k}" class="nav__link${active === k ? ' is-on' : ''}"${active === k ? ' aria-current="page"' : ''}>${l}</a>`).join('')}
           </nav>
           <div class="who">
+            ${S.mode === 'local' ? '<span class="pill pill--draft" title="Данните се пазят само в този браузър">Демо</span>' : ''}
             ${canEdit() ? '' : '<span class="pill pill--muted">Само преглед</span>'}
             ${state.me.user ? `<span class="who__name">${esc(state.me.user)}</span>` : ''}
             ${S.mode === 'server' ? '<button type="button" class="btn btn--ghost btn--sm" data-action="logout">Изход</button>' : ''}
@@ -138,6 +139,7 @@
         </div>
       </header>
       ${opts.hero || ''}
+      ${S.mode === 'local' ? '<div class="wrap"><p class="demo-note">Демо версия: данните се пазят само в този браузър. Числата са твои — никой друг не ги вижда.</p></div>' : ''}
       <main class="wrap page">${content}</main>
       <footer class="wrap foot">ТАЦ „Гранд“ · гр. Пловдив, ул. „Капитан Райчо“ № 56 · Методика от 06.10.2026 г., в сила от 01.01.2027 г.</footer>`;
   }

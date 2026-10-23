@@ -1,4 +1,4 @@
-// Данни през собствения сървър (Express + SQLite)
+// Данни през собствения сървър (Express + JSON файл)
 (function () {
   async function req(method, url, body) {
     const res = await fetch(url, {

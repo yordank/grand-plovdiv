@@ -1,5 +1,5 @@
 // Сглобява цялото приложение в един HTML файл за claude.ai (линк без собствен сървър).
-// Данните там се пазят в базата на страницата (capability `db`), не в SQLite.
+// Данните там се пазят в базата на страницата (capability `db`), не на сървъра.
 //   node scripts/build-artifact.js [изходен файл]
 const fs = require('fs');
 const path = require('path');

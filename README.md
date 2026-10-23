@@ -13,8 +13,15 @@ ADMIN_USER=upravitel ADMIN_PASSWORD='силна-парола' npm start   # http
 
 - Без `ADMIN_PASSWORD` при първото стартиране се създава случайна парола и се показва в конзолата.
 - Ако `ADMIN_PASSWORD` е зададена, тя важи при всяко стартиране (смяната от „Настройки“ се презаписва).
-- Базата е във файл `data/grand.db` (друг път: `DB_FILE=/път/grand.db`). Пази резервно копие на този файл.
+- Данните са във файл `data/grand.json` (друг път: `DB_FILE=/път/grand.json`). Пази резервно копие на този файл.
 - Друг порт: `PORT=8080`.
+
+### Railway / Render
+
+1. New Project → Deploy from GitHub → `yordank/grand-plovdiv`.
+2. Variables: `ADMIN_USER`, `ADMIN_PASSWORD`, `DB_FILE=/data/grand.json`.
+3. Добави **Volume**, монтиран на `/data` — иначе данните се губят при всяко ново пускане.
+4. Start command: `npm start` (подразбира се).
 
 Постоянна работа на Linux сървър:
 
@@ -49,12 +56,12 @@ node scripts/build-artifact.js && python3 test/e2e-artifact.py   # версия�
 
 | | Собствен сървър | Линк в claude.ai |
 |---|---|---|
-| Данни | SQLite файл на сървъра | базата на страницата в claude.ai |
+| Данни | JSON файл на сървъра | базата на страницата в claude.ai |
 | Вход | потребител и парола | акаунт в claude.ai (редактира само собственик/редактор) |
 | Сглобяване | `npm start` | `node scripts/build-artifact.js` |
 
 Файлове:
-- `server.js`, `server/` — Express, SQLite, вход
+- `server.js`, `server/` — Express, данни в JSON файл, вход
 - `public/js/calc.js` — изчислението по методиката (общо за браузъра и сървъра)
 - `public/js/app.js` — интерфейсът; `store-server.js` / `store-artifact.js` — откъде идват данните
 - `public/js/pdf.js`, `excel.js` — файловете

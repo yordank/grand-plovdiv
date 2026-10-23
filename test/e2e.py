@@ -40,7 +40,7 @@ def no_overflow(page, name):
 
 def main():
     port = free_port()
-    db = tempfile.mktemp(suffix='.db')
+    db = tempfile.mktemp(suffix='.json')
     env = {**os.environ, 'PORT': str(port), 'DB_FILE': db, 'ADMIN_USER': 'upravitel', 'ADMIN_PASSWORD': 'proba-12345'}
     srv = subprocess.Popen(['node', 'server.js'], cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     base = f'http://127.0.0.1:{port}'

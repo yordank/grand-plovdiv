@@ -1,55 +1,47 @@
+// Данните се пазят в един JSON файл (без компилирани библиотеки — тръгва на всеки хостинг).
+// Записът е атомарен: първо във временен файл, после преименуване.
 const fs = require('fs');
 const path = require('path');
-const Database = require('better-sqlite3');
 
 const SEED = path.join(__dirname, '..', 'data', 'objects.json');
+const clone = (x) => JSON.parse(JSON.stringify(x));
 
 function open(file) {
-  if (file !== ':memory:') fs.mkdirSync(path.dirname(file), { recursive: true });
-  const db = new Database(file);
-  db.pragma('journal_mode = WAL');
-  db.pragma('foreign_keys = ON');
-  db.exec(`
-    CREATE TABLE IF NOT EXISTS objects (
-      pos       INTEGER NOT NULL,
-      id        TEXT PRIMARY KEY,
-      share     REAL NOT NULL DEFAULT 0,
-      kind      TEXT NOT NULL DEFAULT 'unit',
-      floor     INTEGER,
-      fixed     INTEGER NOT NULL DEFAULT 1,
-      water     INTEGER NOT NULL DEFAULT 1,
-      power     INTEGER NOT NULL DEFAULT 1,
-      chillers  INTEGER NOT NULL DEFAULT 0,
-      note      TEXT NOT NULL DEFAULT ''
-    );
-    CREATE TABLE IF NOT EXISTS months (
-      id         TEXT PRIMARY KEY,           -- 'YYYY-MM'
-      status     TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','locked')),
-      data       TEXT NOT NULL,              -- JSON: разходи, приходи, чл. 10, бележка
-      snapshot   TEXT,                       -- JSON: обекти и сметки при заключване
-      updated_at TEXT NOT NULL,
-      locked_at  TEXT
-    );
-    CREATE TABLE IF NOT EXISTS settings (
-      key   TEXT PRIMARY KEY,
-      value TEXT NOT NULL
-    );
-  `);
-  const count = db.prepare('SELECT COUNT(*) AS n FROM objects').get().n;
-  if (count === 0 && fs.existsSync(SEED)) replaceObjects(db, JSON.parse(fs.readFileSync(SEED, 'utf8')));
+  const db = { file, data: { objects: [], months: {}, settings: {} } };
+  if (file !== ':memory:') {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    if (fs.existsSync(file)) {
+      const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
+      db.data = { objects: [], months: {}, settings: {}, ...parsed };
+    }
+  }
+  if (!db.data.objects.length && fs.existsSync(SEED)) {
+    db.data.objects = normalizeObjects(JSON.parse(fs.readFileSync(SEED, 'utf8')));
+    persist(db);
+  }
   return db;
 }
 
-function rowToObject(r) {
-  return {
-    id: r.id, share: r.share, kind: r.kind, floor: r.floor,
-    fixed: !!r.fixed, water: !!r.water, power: !!r.power, chillers: !!r.chillers,
-    note: r.note || '',
-  };
+function persist(db) {
+  if (db.file === ':memory:') return;
+  const tmp = `${db.file}.${process.pid}.tmp`;
+  fs.writeFileSync(tmp, JSON.stringify(db.data));
+  fs.renameSync(tmp, db.file);
+}
+
+function normalizeObjects(list) {
+  return list.map((o) => ({
+    id: String(o.id).trim(),
+    share: Number(o.share) || 0,
+    kind: o.kind || 'unit',
+    floor: o.floor === null || o.floor === undefined || o.floor === '' || isNaN(Number(o.floor)) ? null : Number(o.floor),
+    fixed: !!o.fixed, water: !!o.water, power: !!o.power, chillers: !!o.chillers,
+    note: String(o.note || ''),
+  }));
 }
 
 function getObjects(db) {
-  return db.prepare('SELECT * FROM objects ORDER BY pos').all().map(rowToObject);
+  return clone(db.data.objects);
 }
 
 const KINDS = new Set(['unit', 'terrace', 'garage', 'hypermarket']);
@@ -70,37 +62,20 @@ function validateObjects(list) {
 }
 
 function replaceObjects(db, list) {
-  const ins = db.prepare(`INSERT INTO objects (pos,id,share,kind,floor,fixed,water,power,chillers,note)
-    VALUES (@pos,@id,@share,@kind,@floor,@fixed,@water,@power,@chillers,@note)`);
-  db.transaction(() => {
-    db.prepare('DELETE FROM objects').run();
-    list.forEach((o, i) => ins.run({
-      pos: i, id: String(o.id).trim(), share: Number(o.share) || 0, kind: o.kind || 'unit',
-      floor: o.floor === null || o.floor === undefined || o.floor === '' ? null : Number(o.floor),
-      fixed: o.fixed ? 1 : 0, water: o.water ? 1 : 0, power: o.power ? 1 : 0, chillers: o.chillers ? 1 : 0,
-      note: String(o.note || ''),
-    }));
-  })();
-}
-
-function rowToMonth(r) {
-  if (!r) return null;
-  return {
-    ...JSON.parse(r.data),
-    id: r.id, status: r.status, updatedAt: r.updated_at, lockedAt: r.locked_at,
-    snapshot: r.snapshot ? JSON.parse(r.snapshot) : null,
-  };
+  db.data.objects = normalizeObjects(list);
+  persist(db);
 }
 
 function listMonths(db) {
-  return db.prepare('SELECT * FROM months ORDER BY id DESC').all().map(rowToMonth);
+  return Object.values(db.data.months).map(clone).sort((a, b) => b.id.localeCompare(a.id));
 }
 
 function getMonth(db, id) {
-  return rowToMonth(db.prepare('SELECT * FROM months WHERE id = ?').get(id));
+  const m = db.data.months[id];
+  return m ? clone(m) : null;
 }
 
-// Само въведените данни се пазят в `data`; статусът и снимката са отделно.
+// Само въведените данни се приемат от клиента; статусът и снимката се определят от сървъра.
 function cleanMonthData(m) {
   const items = (arr) => (Array.isArray(arr) ? arr : [])
     .map((it) => ({ name: String(it && it.name || '').slice(0, 200), amount: Number(it && it.amount) || 0 }))
@@ -120,36 +95,46 @@ function cleanMonthData(m) {
 }
 
 function saveMonth(db, id, data) {
-  const now = new Date().toISOString();
-  db.prepare(`INSERT INTO months (id,status,data,updated_at) VALUES (?, 'draft', ?, ?)
-    ON CONFLICT(id) DO UPDATE SET data = excluded.data, updated_at = excluded.updated_at`)
-    .run(id, JSON.stringify(cleanMonthData(data)), now);
+  const cur = db.data.months[id];
+  db.data.months[id] = {
+    ...cleanMonthData(data), id,
+    status: cur ? cur.status : 'draft',
+    snapshot: cur ? cur.snapshot : null,
+    updatedAt: new Date().toISOString(),
+    lockedAt: cur ? cur.lockedAt : null,
+  };
+  persist(db);
   return getMonth(db, id);
 }
 
 function lockMonth(db, id, snapshot) {
   const now = new Date().toISOString();
-  db.prepare(`UPDATE months SET status='locked', snapshot=?, locked_at=?, updated_at=? WHERE id=?`)
-    .run(JSON.stringify(snapshot), now, now, id);
+  Object.assign(db.data.months[id], { status: 'locked', snapshot, lockedAt: now, updatedAt: now });
+  persist(db);
   return getMonth(db, id);
 }
 
 function unlockMonth(db, id) {
-  db.prepare(`UPDATE months SET status='draft', snapshot=NULL, locked_at=NULL, updated_at=? WHERE id=?`)
-    .run(new Date().toISOString(), id);
+  Object.assign(db.data.months[id], { status: 'draft', snapshot: null, lockedAt: null, updatedAt: new Date().toISOString() });
+  persist(db);
   return getMonth(db, id);
 }
 
 function deleteMonth(db, id) {
-  return db.prepare(`DELETE FROM months WHERE id=? AND status='draft'`).run(id).changes;
+  const m = db.data.months[id];
+  if (!m || m.status !== 'draft') return 0;
+  delete db.data.months[id];
+  persist(db);
+  return 1;
 }
 
 function getSetting(db, key) {
-  const r = db.prepare('SELECT value FROM settings WHERE key=?').get(key);
-  return r ? r.value : null;
+  return key in db.data.settings ? db.data.settings[key] : null;
 }
 function setSetting(db, key, value) {
-  db.prepare('INSERT INTO settings (key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').run(key, value);
+  if (db.data.settings[key] === value) return;
+  db.data.settings[key] = value;
+  persist(db);
 }
 
 module.exports = {
